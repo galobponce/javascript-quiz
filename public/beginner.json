@@ -1,0 +1,126 @@
+[
+  {
+    "text": "¿Cuál es el resultado de la ejecución del siguiente código?",
+    "code": "let x = 5;\nlet y = 3;\nconsole.log(x + y);",
+    "answers": ["3", "5", "8", "15"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "text": "¿Qué hace el siguiente código?",
+    "code": "let nombre = 'Juan';\nconsole.log(`Hola ${nombre}!`);",
+    "answers": [
+      "Crea una función llamada 'nombre'",
+      "Crea una variable llamada 'nombre' y la muestra en la consola",
+      "Muestra la cadena 'Hola Juan!' en la consola",
+      "Ninguna de las anteriores"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "text": "¿Cuál es el resultado de la ejecución del siguiente código?",
+    "code": "let arr = [1, 2, 3, 4, 5];\nconsole.log(arr[2]);",
+    "answers": ["1", "2", "3", "4"],
+    "correctAnswerIndex": 2
+  },
+  {
+    "text": "¿Qué hace el siguiente código?",
+    "code": "function sum(a, b) {\n  return a + b;\n}\n\nconsole.log(sum(2, 3));",
+    "answers": [
+      "Declara una variable llamada 'sum' y la muestra en la consola",
+      "Declara una función llamada 'sum' que suma dos números y la muestra en la consola",
+      "Declara una variable llamada 'a' y otra llamada 'b' y las suma",
+      "Ninguna de las anteriores"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "text": "¿Cuál es el resultado de la ejecución del siguiente código?",
+    "code": "let num = 10;\nwhile (num > 0) {\n  console.log(num);\n  num--;\n}",
+    "answers": [
+      "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+      "10, 9, 8, 7, 6, 5, 4, 3, 2, 1",
+      "10",
+      "Ninguna de las anteriores"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "text": "¿Cuál es la forma correcta de declarar una variable en JavaScript?",
+    "code": "",
+    "answers": [
+      "var x = 5;",
+      "let x = 5;",
+      "const x = 5;",
+      "Todas las anteriores son correctas."
+    ],
+    "correctAnswerIndex": 3
+  },
+  {
+    "text": "¿Qué palabra clave se utiliza para declarar una función en JavaScript?",
+    "code": "",
+    "answers": ["function", "func", "fn", "fun"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "text": "¿Cómo se llama el proceso de asignar un valor a una variable en JavaScript?",
+    "code": "",
+    "answers": [
+      "Declaración",
+      "Asignación",
+      "Inicialización",
+      "Ninguna de las anteriores"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "text": "¿Cuál es la sintaxis correcta para imprimir algo en la consola en JavaScript?",
+    "code": "",
+    "answers": [
+      "print('Hola mundo')",
+      "console.log('Hola mundo')",
+      "println('Hola mundo')",
+      "log('Hola mundo')"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "text": "¿Cuál es el resultado de la siguiente expresión?",
+    "code": "5 + '5'",
+    "answers": ["'55'", "10", "'5+5'", "'Error'"],
+    "correctAnswerIndex": 0
+  },
+  {
+    "text": "¿Cuál es la forma correcta de escribir un comentario de una sola línea en JavaScript?",
+    "code": "",
+    "answers": [
+      "// Esto es un comentario de una sola línea",
+      "/* Esto es un comentario de una sola línea */",
+      "# Esto es un comentario de una sola línea",
+      "<!-- Esto es un comentario de una sola línea -->"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "text": "¿Cuál es la forma correcta de escribir un comentario de varias líneas en JavaScript?",
+    "code": "",
+    "answers": [
+      "/* Este es un comentario\n   de varias líneas */",
+      "// Este es un comentario\n// de varias líneas",
+      "<!-- Este es un comentario\n     de varias líneas -->",
+      "# Este es un comentario\n# de varias líneas"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "text": "¿Cuál es el operador utilizado para comparar dos valores en JavaScript?",
+    "code": "",
+    "answers": ["==", "===", "!=", "<>"],
+    "correctAnswerIndex": 1
+  },
+  {
+    "text": "¿Cuál es el resultado de la siguiente expresión?",
+    "code": "true && false",
+    "answers": ["true", "false", "'true false'", "'Error'"],
+    "correctAnswerIndex": 1
+  }
+]
