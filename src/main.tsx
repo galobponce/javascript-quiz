@@ -4,6 +4,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material"
 
 import App from "./App.tsx"
 import theme from "./config/theme.ts"
+import "./main.css"
 
 // Material UI font
 import "@fontsource/roboto/300.css"
