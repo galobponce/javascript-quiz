@@ -1,11 +1,13 @@
 [
   {
+    "id": 1,
     "text": "¿Cuál es el resultado de la ejecución del siguiente código?",
     "code": "let x = 5;\nlet y = 3;\nconsole.log(x + y);",
     "answers": ["3", "5", "8", "15"],
     "correctAnswerIndex": 2
   },
   {
+    "id": 2,
     "text": "¿Qué hace el siguiente código?",
     "code": "let nombre = 'Juan';\nconsole.log(`Hola ${nombre}!`);",
     "answers": [
@@ -17,12 +19,14 @@
     "correctAnswerIndex": 2
   },
   {
+    "id": 3,
     "text": "¿Cuál es el resultado de la ejecución del siguiente código?",
     "code": "let arr = [1, 2, 3, 4, 5];\nconsole.log(arr[2]);",
     "answers": ["1", "2", "3", "4"],
     "correctAnswerIndex": 2
   },
   {
+    "id": 4,
     "text": "¿Qué hace el siguiente código?",
     "code": "function sum(a, b) {\n  return a + b;\n}\n\nconsole.log(sum(2, 3));",
     "answers": [
@@ -34,6 +38,7 @@
     "correctAnswerIndex": 1
   },
   {
+    "id": 5,
     "text": "¿Cuál es el resultado de la ejecución del siguiente código?",
     "code": "let num = 10;\nwhile (num > 0) {\n  console.log(num);\n  num--;\n}",
     "answers": [
@@ -45,6 +50,7 @@
     "correctAnswerIndex": 2
   },
   {
+    "id": 6,
     "text": "¿Cuál es la forma correcta de declarar una variable en JavaScript?",
     "code": "",
     "answers": [
@@ -56,12 +62,14 @@
     "correctAnswerIndex": 3
   },
   {
+    "id": 7,
     "text": "¿Qué palabra clave se utiliza para declarar una función en JavaScript?",
     "code": "",
     "answers": ["function", "func", "fn", "fun"],
     "correctAnswerIndex": 0
   },
   {
+    "id": 8,
     "text": "¿Cómo se llama el proceso de asignar un valor a una variable en JavaScript?",
     "code": "",
     "answers": [
@@ -73,6 +81,7 @@
     "correctAnswerIndex": 1
   },
   {
+    "id": 9,
     "text": "¿Cuál es la sintaxis correcta para imprimir algo en la consola en JavaScript?",
     "code": "",
     "answers": [
@@ -84,12 +93,14 @@
     "correctAnswerIndex": 1
   },
   {
+    "id": 10,
     "text": "¿Cuál es el resultado de la siguiente expresión?",
     "code": "5 + '5'",
     "answers": ["'55'", "10", "'5+5'", "'Error'"],
     "correctAnswerIndex": 0
   },
   {
+    "id": 11,
     "text": "¿Cuál es la forma correcta de escribir un comentario de una sola línea en JavaScript?",
     "code": "",
     "answers": [
@@ -101,6 +112,7 @@
     "correctAnswerIndex": 0
   },
   {
+    "id": 12,
     "text": "¿Cuál es la forma correcta de escribir un comentario de varias líneas en JavaScript?",
     "code": "",
     "answers": [
@@ -112,12 +124,14 @@
     "correctAnswerIndex": 0
   },
   {
+    "id": 13,
     "text": "¿Cuál es el operador utilizado para comparar dos valores en JavaScript?",
     "code": "",
     "answers": ["==", "===", "!=", "<>"],
     "correctAnswerIndex": 1
   },
   {
+    "id": 14,
     "text": "¿Cuál es el resultado de la siguiente expresión?",
     "code": "true && false",
     "answers": ["true", "false", "'true false'", "'Error'"],
