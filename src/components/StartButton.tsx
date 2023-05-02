@@ -1,10 +1,13 @@
 import { Button } from "@mui/material"
-import { useQuestionsStore } from "../store/questions"
+
+import { useGameStore } from "../store/game"
 
 export const StartButton = () => {
-  const fetchQuestions = useQuestionsStore((state) => state.fetchQuestions)
+  const startGame = useGameStore((state) => state.startGame)
+  const fetchQuestions = useGameStore((state) => state.fetchQuestions)
 
   const handleClick = () => {
+    startGame()
     fetchQuestions(5)
   }
 

@@ -1,8 +1,11 @@
 import { Stack } from "@mui/material"
 
-import { Header, StartButton } from "./components"
+import { useGameStore } from "./store/game"
+import { Game, Header, StartButton } from "./components"
 
 const App = () => {
+  const hasGameStarted = useGameStore((state) => state.hasGameStarted)
+
   return (
     <Stack
       bgcolor="#222222"
@@ -11,7 +14,9 @@ const App = () => {
       gap={2}
     >
       <Header />
-      <StartButton />
+
+      {!hasGameStarted && <StartButton />}
+      {hasGameStarted && <Game />}
     </Stack>
   )
 }
