@@ -6,9 +6,9 @@ export const StartButton = () => {
   const startGame = useGameStore((state) => state.startGame)
   const fetchQuestions = useGameStore((state) => state.fetchQuestions)
 
-  const handleClick = () => {
+  const handleClick = async () => {
+    await fetchQuestions(5)
     startGame()
-    fetchQuestions(5)
   }
 
   return (

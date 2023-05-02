@@ -8,13 +8,18 @@ interface GameState {
   currentQuestion: number
   startGame: () => void
   fetchQuestions: (limit: number) => Promise<void>
+  selectAnswer: (questionId: number, userAnswerIndex: number) => void
 }
 
-export const useGameStore = create<GameState>((set) => {
+export const useGameStore = create<GameState>((set, get) => {
   return {
     questions: [],
     currentQuestion: 0,
     hasGameStarted: false,
+
+    startGame: () => {
+      set({ hasGameStarted: true })
+    },
 
     fetchQuestions: async (limit) => {
       const res = await fetch("../../intermediate.json")
@@ -25,8 +30,22 @@ export const useGameStore = create<GameState>((set) => {
       set({ questions })
     },
 
-    startGame: () => {
-      set({ hasGameStarted: true })
+    selectAnswer: (questionId, userAnswerIndex) => {
+      const { questions } = get()
+
+      const newQuestions = questions.map((question) => {
+        if (question.id === questionId) {
+          return {
+            ...question,
+            userSelectedAnswerIndex: userAnswerIndex,
+            isUserSelectedAnswerIndexCorrect:
+              question.correctAnswerIndex === userAnswerIndex,
+          }
+        }
+        return question
+      })
+
+      set({ questions: newQuestions })
     },
   }
 })
