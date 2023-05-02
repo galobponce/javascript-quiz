@@ -1,10 +1,18 @@
-import { Typography } from "@mui/material"
+import { Stack } from "@mui/material"
+
+import { Header, StartButton } from "./components"
 
 const App = () => {
   return (
-    <Typography variant="h3" component="h1">
-      Javascript Quiz
-    </Typography>
+    <Stack
+      bgcolor="#222222"
+      alignItems="center"
+      justifyContent="center"
+      gap={2}
+    >
+      <Header />
+      <StartButton />
+    </Stack>
   )
 }
 
