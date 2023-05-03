@@ -1,10 +1,15 @@
-import { Question } from "."
-
 import { useGameStore } from "../store/game"
+import { Question, Pagination, Footer } from "."
 
 export const Game = () => {
   const questions = useGameStore((state) => state.questions)
   const currentQuestion = useGameStore((state) => state.currentQuestion)
 
-  return <Question question={questions[currentQuestion]} />
+  return (
+    <>
+      <Pagination />
+      <Question question={questions[currentQuestion]} />
+      <Footer />
+    </>
+  )
 }

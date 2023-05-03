@@ -1,5 +1,7 @@
 export * from "./Game"
+export * from "./Footer"
 export * from "./Header"
 export * from "./Question"
+export * from "./Pagination"
 export * from "./StartButton"
 export * from "./JavascriptLogo"
