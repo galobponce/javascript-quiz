@@ -1,2 +1,2 @@
-export * from "./Question"
+export * from "./Question.d"
 export * from "./Dificulties"
