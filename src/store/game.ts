@@ -9,6 +9,8 @@ interface GameState {
   startGame: () => void
   fetchQuestions: (limit: number) => Promise<void>
   selectAnswer: (questionId: number, userAnswerIndex: number) => void
+  goNextQuestion: () => void
+  goPreviousQuestion: () => void
 }
 
 export const useGameStore = create<GameState>((set, get) => {
@@ -28,6 +30,24 @@ export const useGameStore = create<GameState>((set, get) => {
       // Disorder questions and select limited
       const questions = json.sort(() => Math.random() - 0.5).slice(0, limit)
       set({ questions })
+    },
+
+    goNextQuestion: () => {
+      const { currentQuestion, questions } = get()
+      const nextQuestion = currentQuestion + 1
+
+      if (nextQuestion >= questions.length) return
+
+      set({ currentQuestion: nextQuestion })
+    },
+
+    goPreviousQuestion: () => {
+      const { currentQuestion } = get()
+      const nextQuestion = currentQuestion - 1
+
+      if (nextQuestion < 0) return
+
+      set({ currentQuestion: nextQuestion })
     },
 
     selectAnswer: (questionId, userAnswerIndex) => {
