@@ -12,7 +12,7 @@ import { shadesOfPurple } from "react-syntax-highlighter/dist/esm/styles/hljs"
 
 import { IQuestion } from "../types"
 import { useGameStore } from "../store/game"
-import { getBackgroundColor } from "../helper"
+import { getBackgroundColor } from "../utils"
 
 export const Question = ({ question }: { question: IQuestion }) => {
   const selectAnswer = useGameStore((state) => state.selectAnswer)
