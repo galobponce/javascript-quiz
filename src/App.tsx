@@ -8,6 +8,7 @@ const App = () => {
 
   return (
     <Stack
+      py={3}
       bgcolor="#222222"
       alignItems="center"
       justifyContent="center"

@@ -8,8 +8,12 @@ export const Footer = () => {
   const [correct, incorrect, unanswered] = useQuestionData()
 
   return (
-    <Stack mt={5} gap={2} justifyContent="center" alignItems="center">
-      <Typography fontWeight="bold">{`✅ ${correct} correctas - ❌ ${incorrect} incorrectas - ❓ ${unanswered} sin responder`}</Typography>
+    <Stack mt={{ sm: 2 }} gap={2} justifyContent="center" alignItems="center">
+      <Stack flexDirection={{ sm: "row" }} gap={{ sm: 2 }}>
+        <Typography fontWeight="bold">✅ {correct} correctas</Typography>
+        <Typography fontWeight="bold">❌ {incorrect} incorrectas</Typography>
+        <Typography fontWeight="bold">❓ {unanswered} sin responder</Typography>
+      </Stack>
       <Button
         color="warning"
         variant="outlined"
