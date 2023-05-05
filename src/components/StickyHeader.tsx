@@ -1,4 +1,4 @@
-import { Cached, Close, Delete, HighlightOff } from "@mui/icons-material"
+import { Close } from "@mui/icons-material"
 import {
   AppBar,
   Box,
