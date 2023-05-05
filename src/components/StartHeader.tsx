@@ -1,7 +1,8 @@
 import { Stack, Typography } from "@mui/material"
+
 import { JavascriptLogo } from "."
 
-export const Header = () => (
+export const StartHeader = () => (
   <Stack
     direction="row"
     alignItems="center"
@@ -9,7 +10,7 @@ export const Header = () => (
     gap={2}
     flexWrap="wrap"
   >
-    <JavascriptLogo />
+    <JavascriptLogo width={48} height={48} />
     <Typography variant="h3" component="h1" textAlign="center">
       Javascript Quiz
     </Typography>

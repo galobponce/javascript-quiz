@@ -25,7 +25,7 @@ export const Question = ({ question }: { question: IQuestion }) => {
   }
 
   return (
-    <Card variant="outlined" sx={{ bgcolor: "#222", p: 2, mt: 4 }}>
+    <Card variant="outlined" sx={{ bgcolor: "#222", p: 2, maxWidth: "99vw" }}>
       <Typography variant="h5" textAlign="center">
         {question.text}
       </Typography>

@@ -1,24 +1,34 @@
 import { Stack } from "@mui/material"
 
 import { useGameStore } from "./store/game"
-import { Game, Header, StartButton } from "./components"
+import { Game, StickyHeader, StartButton, StartHeader } from "./components"
 
 const App = () => {
   const hasGameStarted = useGameStore((state) => state.hasGameStarted)
 
   return (
-    <Stack
-      py={3}
-      bgcolor="#222222"
-      alignItems="center"
-      justifyContent="center"
-      gap={2}
-    >
-      <Header />
+    <>
+      {hasGameStarted && <StickyHeader />}
 
-      {!hasGameStarted && <StartButton />}
-      {hasGameStarted && <Game />}
-    </Stack>
+      <Stack
+        py={2}
+        bgcolor="#222222"
+        // Uses all viewport height when game has not started so the content is vertically centered
+        height={!hasGameStarted ? "80vh" : "unset"}
+        alignItems="center"
+        justifyContent="center"
+        gap={2}
+      >
+        {!hasGameStarted && (
+          <>
+            <StartHeader />
+            <StartButton />
+          </>
+        )}
+
+        {hasGameStarted && <Game />}
+      </Stack>
+    </>
   )
 }
 
