@@ -45,7 +45,14 @@ export const Question = ({ question }: { question: IQuestion }) => {
             <ListItemButton
               disabled={question.userSelectedAnswerIndex != null}
               onClick={createHandleClick(index)}
-              sx={{ bgcolor: getBackgroundColor(question, index) }}
+              sx={{
+                bgcolor: getBackgroundColor(question, index),
+
+                // For mobile: the background color used for incorrect answers is the one from hover
+                ":hover": {
+                  bgcolor: getBackgroundColor(question, index),
+                },
+              }}
             >
               <ListItemText primary={answer} sx={{ textAlign: "center" }} />
             </ListItemButton>
